@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio 8</title>
+</head>
+<body>
+    
+    <script>
+
+
+    function calcularMedia() {
+        let numeros = [];
+        for (let i = 0; i < 4; i++) {
+            let num = parseFloat(prompt(`Informe o ${i+1}º número:`));
+            if (isNaN(num) || num <= 0 || num >= 10) {
+                alert("Por favor, informe um número válido maior que 0 e menor que 10.");
+                return; // Retorna para evitar prosseguir com o cálculo
+            }
+            numeros.push(num);
+        }
+        let soma = numeros.reduce((total, num) => total + num, 0);
+        let media = soma / numeros.length;
+        if (media > 5) {
+            alert("Você passou no teste!");
+        } else {
+            alert("Tente novamente.");
+        }
+    }
+
+    calcularMedia();
+
+
+
+    </script>
+
+
+
+</body>
+</html>

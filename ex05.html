@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio 5</title>
+</head>
+<body>
+    
+    <script>
+
+        
+    var valores = [];
+
+    
+    var soma = 0;
+
+    for (var i = 0; i < 10; i++) {
+        var numero = parseFloat(prompt("Digite o " + (i + 1) + "º número:"));
+        valores.push(numero);
+        soma += numero;
+    }
+
+    var media = soma / 10;
+
+    alert('Números informados: ' + valores.join(", "));
+    alert('Média aritmética: ' + media);
+
+
+    </script>
+
+
+
+</body>
+</html>

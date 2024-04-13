@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio 7</title>
+</head>
+<body>
+    
+    <script>
+
+        
+var numeros = [];
+
+
+var somaInferiores72 = 0;
+
+
+for (var i = 0; i < 6; i++) {
+    var numero = parseFloat(prompt("Digite o " + (i + 1) + "º número:"));
+    numeros.push(numero); 
+
+    
+    if (numero < 72) {
+        somaInferiores72 += numero;
+    }
+}
+
+
+var mensagemNumeros = "Números informados: ";
+for (var j = 0; j < numeros.length; j++) {
+    mensagemNumeros += numeros[j];
+    if (j !== numeros.length - 1) {
+        mensagemNumeros += ", ";
+    }
+}
+
+// Exibir todos os números informados pelo usuário
+alert(mensagemNumeros);
+
+// Exibir a soma dos números inferiores a 72
+alert("Soma dos números inferiores a 72: " + somaInferiores72);
+
+
+
+    </script>
+
+
+</body>
+</html>

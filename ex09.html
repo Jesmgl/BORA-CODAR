@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio 9</title>
+</head>
+<body>
+
+
+    <script>
+        
+        function verificarVotacao() {
+    const anoAtual = new Date().getFullYear();
+    const anoNascimento = parseInt(prompt("Informe o ano de nascimento:"));
+    
+    if (isNaN(anoNascimento)) {
+        alert("Por favor, informe um ano válido.");
+        return;
+    }
+    
+    const idade = anoAtual - anoNascimento;
+    
+    if (idade >= 16) {
+        alert("Você pode votar este ano!");
+    } else {
+        alert("Você não pode votar este ano.");
+    }
+}
+
+verificarVotacao();
+
+
+
+    </script>
+
+
+</body>
+</html>
